@@ -18,8 +18,9 @@ CHALLENGE 2
 Write a function named addOne that, given an array of numbers, uses map to return a new array with each value simply incremented by 1. 
 ------------------------------------------------------------------------------------------------ */
 
-const addOne = addOne.map(arr) => {
-  return addOne;
+const addOne = (arr) => {
+  return arr.map(num => {return (Math.pow(num,3));
+  });
   // Solution code here...
 };
 
@@ -31,6 +32,7 @@ Write a function named addQuestion that, given an array of strings, uses map to 
 
 const addQuestion = (arr) => {
   // Solution code here...
+  return arr.map
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -55,6 +57,9 @@ Write a function named forEachTwoToThe that produces the same output as your for
 
 const forEachTwoToThe = (arr) => {
   // Solution code here...
+  const newArr = [];
+  arr.forEach(num => newArr.push(Math.pow(2,num)));
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -65,6 +70,9 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 
 const mapTwoToThe = (arr) => {
   // Solution code here...
+  return arr.map(num => {
+    return(Math.pow(2,num));
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
